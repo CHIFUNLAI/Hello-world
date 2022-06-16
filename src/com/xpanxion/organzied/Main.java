@@ -3,28 +3,27 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double x;
-        double y;
-        double z;
-
-        System.out.println("Enter for x: "  );
-        x = scan.nextDouble();
-        System.out.println("Enter for y: " );
-        y = scan.nextDouble();
-        System.out.println("Enter for z: " );
-        z = scan.nextDouble();
-
-        if ((x < y) && (y < z)){
-            System.out.println("INCREASING");
+        int n = 0;
+        int sum = 0;
+        int count = 1;
+        while(n <= 1){
+            System.out.println("Enter an integer n greater than 1: ");
+            n = scan.nextInt();
         }
-        else if ((x > y) && (y > z)){
+        while(count <= n){
+            if((n % count) == 0){
+                sum+= count;
+                count++;
+            }
+            else {
+                count++;
+            }
 
-            System.out.println("DECREASING");
         }
-        else {
-            System.out.println("NEITHER");
-        }
+        System.out.println(sum);
+        System.out.println("The sum of all factors of " + n + " is " + sum);
     }
 }
+
