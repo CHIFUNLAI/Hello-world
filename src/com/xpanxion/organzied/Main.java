@@ -25,5 +25,8 @@ public class Main {
         System.out.println(sum);
         System.out.println("The sum of all factors of " + n + " is " + sum);
     }
-}
+
+    }
+
+
 
