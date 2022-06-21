@@ -20,7 +20,10 @@ public class ArrayProblem3 {
             if (i >= 0 && i < 9) {
                 System.out.print(a[i + 1] + " ");
             }
+            else if(i == 9){
+                System.out.print(temp);
+            }
         }
-        System.out.print(temp);
+        
     }
 }
